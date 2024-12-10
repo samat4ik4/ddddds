@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta Boshqaruvi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Bank</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fas fa-credit-card"></i> Karta</a></li>
+                <li><a href="#"><i class="fas fa-exchange-alt"></i> O'tkazmalar</a></li>
+                <li><a href="#"><i class="fas fa-history"></i> Tarix</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Sozlamalar</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="header-left">
+                    <h1>Asosiy Karta</h1>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">Good night</span>
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+            </header>
+
+            <div class="card-section">
+                <div class="credit-card">
+                    <div class="card-chip">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="card-number">
+                        <span>4216</span>
+                        <span>7234</span>
+                        <span>9018</span>
+                        <span>3421</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-holder">
+                            <span class="label">KARTA EGASI</span>
+                            <span class="value">Sa'dullayev Sarvar</span>
+                        </div>
+                        <div class="card-expires">
+                            <span class="label">MUDDATI</span>
+                            <span class="value">12/25</span>
+                        </div>
+                    </div>
+                    <div class="card-type">
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                </div>
+
+                <div class="balance-info">
+                    <div class="balance-card">
+                        <div class="balance-header">
+                            <h3>Kartadagi balans</h3>
+                            <button class="refresh-btn"><i class="fas fa-sync-alt"></i></button>
+                        </div>
+                        <div class="balance-amount">
+                            <span class="amount">0</span>
+                            <span class="currency">UZS</span>
+                        </div>
+                        <div class="balance-actions">
+                            <button class="action-btn deposit">
+                                <i class="fas fa-plus"></i>
+                                To'ldirish
+                            </button>
+                            <button class="action-btn withdraw">
+                                <i class="fas fa-minus"></i>
+                                Yechib olish
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="recent-transactions">
+                        <h3>So'nggi operatsiyalar</h3>
+                        <div class="transaction-list">
+                            <div class="transaction-item">
+                                <div class="transaction-icon deposit">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <div class="transaction-info">
+                                    <h4>Kartaga o'tkazma</h4>
+                                    <p>Click Bank</p>
+                                </div>
+                                <div class="transaction-amount deposit">
+                                    +1,200,000 UZS
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <div class="transaction-icon withdraw">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="transaction-info">
+                                    <h4>Market xaridi</h4>
+                                    <p>Korzinka</p>
+                                </div>
+                                <div class="transaction-amount withdraw">
+                                    -450,000 UZS
+                                </div>
+                            </div>
+                            <div class="transaction-item">
+                                <div class="transaction-icon withdraw">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="transaction-info">
+                                    <h4>Internet to'lovi</h4>
+                                    <p>UzOnline</p>
+                                </div>
+                                <div class="transaction-amount withdraw">
+                                    -150,000 UZS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hodimlar bo'limi -->
+            <div class="employees-section">
+                <div class="section-header">
+                    <h3>Hodimlar</h3>
+                    <button class="add-employee-btn">
+                        <i class="fas fa-plus"></i> Hodim qo'shish
+                    </button>
+                </div>
+                <div class="employees-list">
+                    <!-- Hodimlar ro'yxati bu yerda ko'rsatiladi -->
+                </div>
+            </div>
+
+            <!-- Hodim qo'shish modali -->
+            <div class="modal" id="employeeModal">
+                <div class="modal-content">
+                    <h3>Yangi hodim qo'shish</h3>
+                    <form id="employeeForm">
+                        <input type="text" id="employeeName" placeholder="Hodim ismi" required>
+                        <input type="text" id="employeePosition" placeholder="Lavozimi" required>
+                        <input type="tel" id="employeePhone" placeholder="Telefon raqami" required>
+                        <div class="modal-buttons">
+                            <button type="submit" class="save-btn">Saqlash</button>
+                            <button type="button" class="cancel-btn">Bekor qilish</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
